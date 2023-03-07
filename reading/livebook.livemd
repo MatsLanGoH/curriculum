@@ -94,7 +94,7 @@ Elixir Cells are interactive code blocks that run Elixir code. These cells can b
 Here you can see an Elixir cell that adds two integers.
 
 ```elixir
-2 + 2
+2 + 2 + 3
 ```
 
 You can create an Elixir cell anywhere throughout this course if you want to experiment with some Elixir code. Just be careful not to break existing code examples or affect further examples be rebinding already bound variables.
@@ -103,13 +103,21 @@ To create an Elixir cell, hover your cursor between two cells and press the `+Co
 
 Livebook may change this UI, so if this is instruction is no longer accurate please speak to your instructor and/or [Report An Issue](https://github.com/DockYard-Academy/beta_curriculum/issues/new?assignees=&labels=&template=issue.md&title=)
 
-<!-- livebook:{"break_markdown":true} -->
+```elixir
+2 ** 3
+```
 
 ### Your Turn
 
 Create an Elixir code cell below. Run some Elixir code such as `1 + 2` in the cell.
 
-<!-- livebook:{"break_markdown":true} -->
+```elixir
+1 + 2
+```
+
+```elixir
+"1" <> "2"
+```
 
 ### Livebook Shortcuts
 
@@ -139,7 +147,7 @@ to see the Markdown content inside.
 
 <!-- livebook:{"break_markdown":true} -->
 
-<div style="padding: 1rem;background-color:lightgray; text-align: center;">
+<div style="padding: 4rem;background-color:lightgray; text-align: center;">
 
 ### Click Me
 
@@ -196,21 +204,21 @@ Evaluate the Elixir cell below, then change `5` to `4` to see **Evaluated** chan
 Re-evaluate the cell to see *Evaluated\** change to **Evaluated**.
 
 ```elixir
-5
+4
 ```
 
 Sometimes order of evaluation can cause issues in Exercises by using a stale version of an Elixir cell. Make sure to evaluate a code cell whenever you make a change.
 
 ## Formatting
 
-You can format Elixir code using the <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>I</kbd> (Windows & Linux) Keybinding or <kbd>SHIFT</kbd>+<kbd>OPTION</kbd>+<kbd>I</kbd> (MacOS).
+You can format Elixir code using the <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>I</kbd> (Windows & Linux) Keybinding or <kbd>SHIFT</kbd>+<kbd>OPTION</kbd>+<kbd>F</kbd> (MacOS).
 
-Try uncommenting the following code (Remove the `#` character) then press <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>I</kbd> (Windows & Linux) or <kbd>SHIFT</kbd>+<kbd>OPTION</kbd>+<kbd>I</kbd> (MacOS) to format the code.
+Try uncommenting the following code (Remove the `#` character) then press <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>I</kbd> (Windows & Linux) or <kbd>SHIFT</kbd>+<kbd>OPTION</kbd>+<kbd>F</kbd> (MacOS) to format the code.
 
 Notice that the `1 + 1` code moves to the left.
 
 ```elixir
-#               1 + 1
+1 + 1
 ```
 
 If you have not evaluated any Elixir code cells, you may see a warning.
@@ -220,10 +228,10 @@ If you have not evaluated any Elixir code cells, you may see a warning.
 Ensure you evaluate any Elixir cell before attempting to use the code format command.
 
 If you cannot format an Elixir cell, you can use this as a clue that you have a syntax error in your code. For example, the following
-code is invalid. Notice that you cannot use <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>I</kbd> to format the code.
+code is invalid. Notice that you cannot use <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>F</kbd> to format the code.
 
 ```elixir
-          1 +
+1 + 2
 ```
 
 ## Mark As Completed
